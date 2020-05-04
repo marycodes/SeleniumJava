@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="Academy.listeners"/>
+  </listeners>
+  <test name="Test">
+    <classes>
+      <class name="Academy.Getphoneassertions"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="searchboxTest">
+    <classes>
+      <class name="Academy.Searchboxassertion"/>
+    </classes>
+  </test> <!-- searchboxTest -->
+  <test name="homepageTest">
+    <classes>
+      <class name="Academy.HomePage"/>
+    </classes>
+  </test> <!-- homepageTest -->
+  <test name="AppTest">
+    <classes>
+      <class name="Academy.AppTest"/>
+    </classes>
+  </test> <!-- AppTest -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="Academy.Getphoneassertions">
+        <methods>
+          <include name="TearDown"/>
+          <include name="LinkAssertion"/>
+          <include name="initalise"/>
+        </methods>
+      </class> <!-- Academy.Getphoneassertions -->
+      <class name="Academy.Searchboxassertion">
+        <methods>
+          <include name="initalise"/>
+          <include name="TearDown"/>
+        </methods>
+      </class> <!-- Academy.Searchboxassertion -->
+      <class name="Academy.HomePage">
+        <methods>
+          <include name="TearDown"/>
+          <include name="initalise"/>
+        </methods>
+      </class> <!-- Academy.HomePage -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
